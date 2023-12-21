@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="endpage.css">
+    <title>Rock paper Scissors</title>
+</head>
+<body>
+    <div id="finalMessage">
+        <h1>HURRY</h1>
+        <h2>YOU WON THE GAME</h2>
+        <button id="tryAgainBtn" onclick="play()">Play Again</button>
+    </div>
+    <button id="instructionsBtn" onclick="showInstructions()">Instructions</button>
+    <div class="popup" id="instructionsPopup">
+        <div class="popup-content">
+          <span class="close" onclick="hideInstructions()"><div>X</div></span>
+          <h2>Instructions</h2>
+          <p> 
+              1.If both players lay down the same hand, each player lays down another hand <br>
+              2. Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.” <br>
+              3.Use rock, paper, scissors to settle minor decisions or simply play to pass the time <br>
+              4.If both players lay down the same hand, each player lays down another hand
+          </p>
+        </div>
+      </div>
+
+    <script src="endgame.js"></script>
+</body>
+</html>

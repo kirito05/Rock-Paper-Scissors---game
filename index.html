@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="scoreBox">
+    <div class="gameTitle">
+      <p>Rock</p>
+      <p>paper</p>
+      <p>Scissors</p>
+    </div>
+    <div class="score">
+      <div id="scoreCard_1">
+        Computer Score
+       <span id="computerScore">0</span>
+      </div>
+      <div id="scoreCard_2">
+         Your Score
+        <span id="playerScore">0</span> 
+      </div>
+    </div>
+  </div>
+  <div class="game">
+    <div id="buttonStyle">
+      <div class="options">
+        <button onclick="play('rock')" id="rockBtn"><img src="./assets/rock.png" alt="rock" id="rockImg"></button>
+        <div id="arrow_1"></div>
+        <div id="arrow_2"></div>
+        <div id="arrow_3"></div>
+        <button onclick="play('paper')" id="paperBtn"><img src="./assets/paper.png" alt="paper" id="paperImg"></button>
+        <button onclick="play('scissors')" id="scissorsBtn"><img src="./assets/scissors.png" alt="scissors" id="scissorsImg"></button>
+      </div>
+    </div>
+    <div class="result">
+      <div id="selections">
+        <div id="plyerBox">
+          <h2 id="player1"></h2>
+          <div id="playerselection"></div>
+        </div>
+        <div id="computerBox">
+          <h2 id="computer"></h2>
+          <div id="computerselection"></div>
+        </div>
+      </div>
+      <h2 id="resultText"></h2>
+      <button id="nextBtn" onclick="nextPage()" style="display: none;">Next</button>
+      <button id="tryAgainBtn" onclick="resetGame()" style="display: none;">Try Again</button>
+    </div>
+  </div>
+  <button id="instructionsBtn" onclick="showInstructions()">Instructions</button>
+
+  <div class="popup" id="instructionsPopup">
+    <div class="popup-content">
+      <span class="close" onclick="hideInstructions()"><div>X</div></span>
+      <h2>Instructions</h2>
+      <p> 
+          1.If both players lay down the same hand, each player lays down another hand <br>
+          2. Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.” <br>
+          3.Use rock, paper, scissors to settle minor decisions or simply play to pass the time <br>
+          4.If both players lay down the same hand, each player lays down another hand
+      </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
